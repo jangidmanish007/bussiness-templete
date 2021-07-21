@@ -5,7 +5,13 @@ body{
 a{
     text-decoration: none;
 }
-
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11111111;
+}
 .section{
     padding-top: 70px;
     padding-bottom: 70px;
@@ -28,12 +34,6 @@ a{
 .section h2.section-head span{
     color: #09ff00;
 }
-
-
-#header{
-    background: #57606f;
-    color: #fff;
-}
 #logo{
     font-size: 2rem;
     margin-top: 5px;
@@ -46,22 +46,20 @@ a{
 #menu li{
     display: inline-block;
 }
-#menu li a{
-    color: #fff;
-    padding: 15px;
-    display: block;
-}
 .float-md-right{
     float: right;
 }
-#menu li a:hover{
+.navbar-nav li a:hover{
     background:#2f3542 ;
+    color: #fff;
 }
 #banner{
     background: url(../images/alvin-engler-bIhpiQA009k-unsplash.jpg) no-repeat 0 0;
     background-size: cover;
     background-position-y: center;
     background-position-x: top;
+    position:relative;
+
 }
 .banner-title{
     padding-top: 5rem;
@@ -219,16 +217,12 @@ a.read-more:after{
         text-align: center;
         margin: 10px 0;
     }
-    #menu{
-        text-align: center;
-        padding: 3px;
-    }
     
     .banner-title{
-        padding-top: 0rem;
+        padding-top: .8rem;
     }
     .banner-title h1{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     #menu li a{
               padding: 9px;
