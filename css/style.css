@@ -1,0 +1,261 @@
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section h2.section-head{
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.section h2.section-head:after{
+    content: '';
+    margin: 1rem auto;
+    display: block;
+    background: #e74c3c;
+    width: 190px;
+    height: 3px;
+
+}
+.section h2.section-head span{
+    color: #09ff00;
+}
+
+
+#header{
+    background: #57606f;
+    color: #fff;
+}
+#logo{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    color: #fff;
+    padding: 15px;
+    display: block;
+}
+.float-md-right{
+    float: right;
+}
+#menu li a:hover{
+    background:#2f3542 ;
+}
+#banner{
+    background: url(../images/alvin-engler-bIhpiQA009k-unsplash.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: top;
+}
+.banner-title{
+    padding-top: 5rem;
+}
+.banner-title h1{
+    background: rgba(255,255,255,0.7);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+.banner-title p.lead{
+    color: #fff;
+    background: rgba(231,76,60,0.6);
+    padding: 10px;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i.fa{
+  font-size: 6rem;
+  color: #e74c3c;
+  margin-bottom: 1.4rem;
+}
+#testimonials{
+    background: url(../images/nicolas.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+#testimonials:before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(52, 73, 94, 0.623);
+ z-index: -1;
+}
+.testimonial img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: .09rem 0;
+    border: 2px solid white;
+}
+.news-post{
+    box-shadow: 0px 0px 19px rgba(70, 68, 68, 0.305);
+    padding: 1rem 1rem;
+    margin-top: .9rem;
+}
+.news-post img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.news-post h3{
+    font-size: 1.36rem;
+    font-weight: 510;
+    letter-spacing: .1rem;
+}
+.news-post h3 a{
+    color: #e74c3c;
+}
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.post-date:before {
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 2px;
+}
+.news-post p{
+    padding-top: 6px;
+    font-size: 1rem;
+}
+a.read-more{
+    background: gray;
+    color: white;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all .2s;
+    margin-bottom: 20px;
+}
+a.read-more:hover{
+    box-shadow: 3px 2px 3px black;
+}
+a.read-more:after{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 6px;
+}
+#footer-sidebar{
+    color: #fff;
+    background: #192a56;
+    padding: 3rem 0;
+}
+.footer-widget{
+    margin: 0;
+}
+.footer-widget h4{
+    margin-bottom: 1rem;
+}
+ .footer-widget h4:after{
+  content: '';
+  background: #fff;
+  display: block;
+  width: 90px;
+  height: 2px;
+  margin: 5px 0;
+ }
+ .footer-widget a{
+     color: #fff;
+ }
+ .latest-news{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ .latest-news li{
+     margin-bottom: 3px;
+ }
+ .latest-news li:before{
+     content: "\f101";
+     font-family: FontAwesome;
+     padding-right: 7px;
+ }
+ #footer{
+     color: #fff;
+     background: #0d162e;
+     padding: 10px 0;
+ }
+ #social-icons{
+     text-align: right;
+     list-style: none;
+     color: #fff;
+    margin: 0;
+    padding: 0;
+}
+#social-icons li{
+    display: inline-block;
+    padding-left: 5px;
+}
+#social-icons li a{
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+}
+@media (max-width: 768px){
+    #logo{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #menu{
+        text-align: center;
+        padding: 3px;
+    }
+    
+    .banner-title{
+        padding-top: 0rem;
+    }
+    .banner-title h1{
+        font-size: 1.7rem;
+    }
+    #menu li a{
+              padding: 9px;
+    }
+    .testimonial{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-widget{
+        margin-bottom: 20px;
+         margin-left: 1rem;
+    }
+    #footer{
+        text-align: center;
+
+    }
+    #social-icons{
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+.news-post{
+    margin:1rem;
+}
+ 
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+}
